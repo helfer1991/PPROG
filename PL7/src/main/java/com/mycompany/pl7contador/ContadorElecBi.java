@@ -46,7 +46,7 @@ public class ContadorElecBi extends ContadorEle {
     
     @Override
     public String toString() {
-        return super.toString()+String.format("Nome Cliente: %s\nConsumo mensal: %.2f\n", getNomeCliente(), calcularConsumoMes());
+        return super.toString();
     }
 
 }

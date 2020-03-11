@@ -44,7 +44,7 @@ public class ContadorElectSimples extends ContadorEle {
     
     @Override
     public String toString() {
-        return super.toString()+String.format("Nome cliente: %s\nCusto consumo mensal: %.2f\n", getNomeCliente(), calcularConsumoMes());
+        return super.toString();
     }
 
 }

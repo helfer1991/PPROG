@@ -85,7 +85,7 @@ public abstract class Contador {
    
     @Override
     public String toString() {
-        return String.format("id: %s\nConsumo: %d\nNome do cliente: %s\n", this.id, this.consumo, this.nomeCliente);
+        return String.format("ID: %s\nConsumo: %d\nNome do cliente: %s\nCusto do consumo mensal: %.2f\n", this.id, this.consumo, this.nomeCliente, calcularConsumoMes());
     }
     
     public abstract double calcularConsumoMes(); //aqui sera o polimorfismo

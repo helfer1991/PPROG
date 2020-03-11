@@ -30,6 +30,6 @@ public class ContadorGas extends Contador {
     
     @Override
     public String toString() {
-        return String.format("ID: %s\nCusto: %.2f\nNome cliente: %s\n", prefixo+contadoresGasQt, calcularConsumoMes(), getNomeCliente());
+        return super.toString();
     }
 }

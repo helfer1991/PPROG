@@ -14,13 +14,13 @@ public abstract class ContadorEle extends Contador {
     private static String prefixo = "Elect-";
     
     public ContadorEle(int consumo, String nomeCliente) {
-        super(prefixo+contadorElect, consumo, nomeCliente);
+        super(prefixo+contadorElect, consumo, nomeCliente); //erro aqui no calculo do contaodr de eletricidade
         contadorElect++;
     }
     
     @Override
     public String toString() {
-        return String.format("Nome cliente: %s\nId do contador: %s\n", getNomeCliente(), prefixo+contadorElect);
+        return super.toString();
     }
     
     @Override
