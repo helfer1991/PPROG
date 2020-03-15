@@ -51,13 +51,26 @@ public class Main {
             }
         }
         
-        //a
+        //a c E d
         for(int i = 0; i < figuras.length; i++) {
             if(figuras[i] != null) {
                 System.out.printf("Area: %.1f\n", figuras[i].calcularArea());
             }
         }
-
+        
+        //e.i
+        for(int i = 0; i < figuras.length; i++) {
+            if(figuras[i] instanceof Retangulo) {
+                System.out.println(figuras[i]);
+            }
+        }
+        
+        //e.ii
+        for(int i = 0; i < figuras.length; i++) {
+            if(figuras[i] instanceof Circulo) {
+                System.out.println(figuras[i]);
+            }
+        }
     }
     
 }
