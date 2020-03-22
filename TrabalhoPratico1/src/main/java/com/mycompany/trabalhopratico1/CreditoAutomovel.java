@@ -72,7 +72,11 @@ public class CreditoAutomovel extends CreditoBancario {
     
     @Override
     public double calcularMontanteAReceberPorCadaCredito() {
-        return calcularMontanteTotalJuros() + super.getMontante()*0.99;
+        if(super.getPrazo() > 24) {
+            return calcularMontanteTotalJuros() + super.getMontante();
+        } else {
+            return calcularMontanteTotalJuros() + super.getMontante()*0.99;
+        }        
     }
     
     @Override
