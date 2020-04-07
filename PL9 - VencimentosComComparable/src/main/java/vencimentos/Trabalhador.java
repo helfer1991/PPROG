@@ -9,7 +9,7 @@ package vencimentos;
  */
 public abstract class Trabalhador implements Comparable<Trabalhador> {
 
-    /**
+     /**
      * O nome do trabalhador.
      */
     private String nome;
@@ -62,19 +62,6 @@ public abstract class Trabalhador implements Comparable<Trabalhador> {
     public String toString() {
         return nome;
     }
-    
-    @Override
-    public int compareTo(Trabalhador outroTrabalhador) {
-        double vencimento = this.calcularVencimento();
-        double vencimento2 = outroTrabalhador.calcularVencimento();
-        
-        if(vencimento < vencimento2)
-            return -1;
-        else if(vencimento > vencimento2)
-            return 1;
-        else
-            return 0;
-    }
 
     /**
      * Permite o cálculo do vencimento do trabalhador através do polimorfismo.
@@ -83,4 +70,12 @@ public abstract class Trabalhador implements Comparable<Trabalhador> {
      */
     public abstract float calcularVencimento();
 
+    @Override
+    public int compareTo(Trabalhador trabalhador) {
+        if(this.calcularVencimento() > trabalhador.calcularVencimento())
+            return 1;
+        else if(this.calcularVencimento() < trabalhador.calcularVencimento())
+            return -1;
+        return 0;
+    }
 }

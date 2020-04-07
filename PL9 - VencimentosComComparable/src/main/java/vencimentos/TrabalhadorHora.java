@@ -12,26 +12,26 @@ public class TrabalhadorHora extends Trabalhador {
      * O número de horas de trabalho do trabalhador à hora.
      */
     private int numeroHoras;
-    
+
     /**
      * O pagamento por hora de trabalho do trabalhador à hora.
      */
     private float pagamentoHora;
-    
+
     /**
-     * O valor por omissão do número de horas de trabalho do trabalhador 
+     * O valor por omissão do número de horas de trabalho do trabalhador
      * à hora.
      */
     private static final int NUMERO_HORAS_POR_OMISSAO = 0;
-    
+
     /**
-     * O valor por omissão do pagamento por hora de trabalho do trabalhador 
+     * O valor por omissão do pagamento por hora de trabalho do trabalhador
      * à hora.
      */
     private static final int PAGAMENTO_HORA_POR_OMISSAO = 10;
 
     /**
-     * Constrói uma instância de TrabalhadorHora recebendo o nome, o número de  
+     * Constrói uma instância de TrabalhadorHora recebendo o nome, o número de
      * horas de trabalho e o valor do pagamento por hora.
      *
      * @param nome o nome do trabalhador à hora
@@ -45,7 +45,7 @@ public class TrabalhadorHora extends Trabalhador {
     }
 
     /**
-     * Constrói uma instância de TrabalhadorHora recebendo o nome e atribuindo 
+     * Constrói uma instância de TrabalhadorHora recebendo o nome e atribuindo
      * o número de horas por omissão e o pagamento hora por omissão.
      *
      * @param nome o nome do trabalhador à hora
@@ -87,7 +87,7 @@ public class TrabalhadorHora extends Trabalhador {
     /**
      * Modifica o número de horas de trabalho do trabalhador à hora.
      *
-     * @param numeroHoras o novo número de horas de trabalho do trabalhador 
+     * @param numeroHoras o novo número de horas de trabalho do trabalhador
      *                    à hora
      */
     public void setNumeroHoras(int numeroHoras) {
@@ -97,7 +97,7 @@ public class TrabalhadorHora extends Trabalhador {
     /**
      * Modifica o pagamento por hora de trabalho do trabalhador à hora.
      *
-     * @param pagamentoHora o novo pagamento por hora de trabalho do trabalhador 
+     * @param pagamentoHora o novo pagamento por hora de trabalho do trabalhador
      *                      à hora
      */
     public void setPagamentoHora(float pagamentoHora) {
@@ -112,7 +112,7 @@ public class TrabalhadorHora extends Trabalhador {
     @Override
     public String toString() {
         return String.format("Trabalhador à Hora: %s %nNº de Horas de Trabalho: "
-                + "%d %nPagamento por Hora: %.2f€",
+                        + "%d %nPagamento por Hora: %.2f€",
                 super.toString(), numeroHoras, pagamentoHora);
     }
 

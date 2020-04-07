@@ -12,17 +12,17 @@ public class TrabalhadorPeca extends Trabalhador {
      * O número de peças do tipo 1 do trabalhador à peça.
      */
     private int numeroPecasTipo1;
-    
+
     /**
      * O número de peças do tipo 2 do trabalhador à peça.
      */
     private int numeroPecasTipo2;
-    
+
     /**
      * O número de peças por omissão do tipo 1 do trabalhador à peça.
      */
     private static final int NUMERO_PECAS_TIPO1_POR_OMISSAO = 0;
-    
+
     /**
      * O número de peças por omissão do tipo 2 do trabalhador à peça.
      */
@@ -33,7 +33,7 @@ public class TrabalhadorPeca extends Trabalhador {
      * peça.
      */
     private static float pagamentoPecaTipo1 = 15.5f;
-    
+
     /**
      * O pagamento por uma peça do tipo 2 aplicado a todos os trabalhadores à
      * peça.
@@ -41,7 +41,7 @@ public class TrabalhadorPeca extends Trabalhador {
     private static float pagamentoPecaTipo2 = 20;
 
     /**
-     * Constrói uma instância de TrabalhadorPeca recebendo o nome, o número de 
+     * Constrói uma instância de TrabalhadorPeca recebendo o nome, o número de
      * peças do tipo 1 e o número de peças do tipo 2.
      *
      * @param nome o nome do trabalhador à peça
@@ -55,8 +55,8 @@ public class TrabalhadorPeca extends Trabalhador {
     }
 
     /**
-     * Constrói uma instância de TrabalhadorPeca recebendo o nome e atribuindo 
-     * aos números de peças do tipo 1 e do tipo 2 os valores por omissão 
+     * Constrói uma instância de TrabalhadorPeca recebendo o nome e atribuindo
+     * aos números de peças do tipo 1 e do tipo 2 os valores por omissão
      * respectivos.
      *
      * @param nome o nome do trabalhador à peça
@@ -68,7 +68,7 @@ public class TrabalhadorPeca extends Trabalhador {
     }
 
     /**
-     * Constrói uma instância de TrabalhadorPeca atribuindo o nome por omissão e  
+     * Constrói uma instância de TrabalhadorPeca atribuindo o nome por omissão e
      * os números de peças por omissão do tipo 1 e do tipo 2.
      */
     public TrabalhadorPeca() {
@@ -123,7 +123,7 @@ public class TrabalhadorPeca extends Trabalhador {
     @Override
     public String toString() {
         return String.format("Trabalhador à Peça: %s %nNº de Peças do Tipo 1: "
-                + "%d %nNº de Peças do Tipo 2: %d",
+                        + "%d %nNº de Peças do Tipo 2: %d",
                 super.toString(), numeroPecasTipo1, numeroPecasTipo2);
     }
 
@@ -135,7 +135,7 @@ public class TrabalhadorPeca extends Trabalhador {
     @Override
     public float calcularVencimento() {
         return numeroPecasTipo1 * pagamentoPecaTipo1
-               + numeroPecasTipo2 * pagamentoPecaTipo2;
+                + numeroPecasTipo2 * pagamentoPecaTipo2;
     }
 
     /**
@@ -173,5 +173,4 @@ public class TrabalhadorPeca extends Trabalhador {
     public static void setPagamentoPeca2(float pagamentoPecaTipo2) {
         TrabalhadorPeca.pagamentoPecaTipo2 = pagamentoPecaTipo2;
     }
-
 }

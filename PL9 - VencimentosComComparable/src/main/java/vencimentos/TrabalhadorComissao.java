@@ -12,12 +12,12 @@ public class TrabalhadorComissao extends Trabalhador {
      * O salário base do trabalhador à comissão.
      */
     private float salarioBase;
-    
+
     /**
      * O montante de vendas realizadas pelo trabalhador à comissão.
      */
     private float vendas;
-    
+
     /**
      * A percentagem da comissão de vendas do trabalhador à comissão.
      */
@@ -27,20 +27,20 @@ public class TrabalhadorComissao extends Trabalhador {
      * O valor por omissão do salário base do trabalhador à comissão.
      */
     private static final float SALARIO_BASE_POR_OMISSAO = 530;
-    
+
     /**
      * O montante por omissão das vendas do trabalhador à comissão.
      */
     private static final int VENDAS_POR_OMISSAO = 0;
-    
+
     /**
      * A percentagem por omissão da comissão de vendas do trabalhador à comissão.
      */
     private static final int COMISSAO_POR_OMISSAO = 0;
 
     /**
-     * Constrói uma instância de TrabalhadorComissao recebendo o nome, o salário 
-     * base, o montante de vendas e a percentagem da comissão de vendas do 
+     * Constrói uma instância de TrabalhadorComissao recebendo o nome, o salário
+     * base, o montante de vendas e a percentagem da comissão de vendas do
      * trabalhador à comissão.
      *
      * @param nome o nome do trabalhador à comissão
@@ -49,8 +49,8 @@ public class TrabalhadorComissao extends Trabalhador {
      * @param comissao a percentagem da comissão de vendas do trabalhador à
      * comissão
      */
-    public TrabalhadorComissao(String nome, float salarioBase, float vendas, 
-            float comissao) {
+    public TrabalhadorComissao(String nome, float salarioBase, float vendas,
+                               float comissao) {
         super(nome);
         this.salarioBase = salarioBase;
         this.vendas = vendas;
@@ -58,9 +58,9 @@ public class TrabalhadorComissao extends Trabalhador {
     }
 
     /**
-     * Constrói uma instância de TrabalhadorComissao recebendo o nome e 
-     * atribuindo o salário base por omissão, o montante das vendas por omissão  
-     * e a percentagem por omissão da comissão de vendas do trabalhador à 
+     * Constrói uma instância de TrabalhadorComissao recebendo o nome e
+     * atribuindo o salário base por omissão, o montante das vendas por omissão
+     * e a percentagem por omissão da comissão de vendas do trabalhador à
      * comissão.
      *
      * @param nome o nome do trabalhador à comissão
@@ -73,8 +73,8 @@ public class TrabalhadorComissao extends Trabalhador {
     }
 
     /**
-     * Constrói uma instância de TrabalhadorComissao atribuindo o nome por 
-     * omissão, o salário base por omissão, o montante por omissão das vendas e 
+     * Constrói uma instância de TrabalhadorComissao atribuindo o nome por
+     * omissão, o salário base por omissão, o montante por omissão das vendas e
      * a percentagem por omissão da comissão de vendas do trabalhador à comissão.
      */
     public TrabalhadorComissao() {
@@ -94,7 +94,7 @@ public class TrabalhadorComissao extends Trabalhador {
     }
 
     /**
-     * Devolve o montante de vendas do trabalhador à comissão.     
+     * Devolve o montante de vendas do trabalhador à comissão.
      *
      * @return montante das vendas do trabalhador à comissão
      */
@@ -132,7 +132,7 @@ public class TrabalhadorComissao extends Trabalhador {
     /**
      * Modifica a percentagem da comissão de vendas do trabalhador à comissão.
      *
-     * @param comissao a nova percentagem da comissão de vendas do trabalhador 
+     * @param comissao a nova percentagem da comissão de vendas do trabalhador
      * à comissão
      */
     public void setComissao(float comissao) {
@@ -147,9 +147,9 @@ public class TrabalhadorComissao extends Trabalhador {
     @Override
     public String toString() {
         return String.format("Trabalhador à Comissão: %s"
-                + "%nSalário Base: %.2f€"
-                + "%nVendas: %.2f€"
-                + "%nComissão: %.1f%%",
+                        + "%nSalário Base: %.2f€"
+                        + "%nVendas: %.2f€"
+                        + "%nComissão: %.1f%%",
                 super.toString(), salarioBase, vendas, comissao);
     }
 
