@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pl15.FXMLController">
+   <bottom>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="150.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#TrataEvento" prefHeight="34.0" prefWidth="150.0" text="Clica aqui!" textFill="#1b1919">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
+   </bottom>
+   <center>
+      <Label fx:id="contaCliques" text="Numero de cliques: 0" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>
