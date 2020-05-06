@@ -53,7 +53,7 @@ public class CreditoAutomovel extends CreditoBancario {
     public double calcularMontanteTotalJuros() {
         double totalJuros = 0;
         double mensalidade = super.getMontante() / super.getPrazo();
-        double txJuroMensal = this.txJuro/100;
+        double txJuroMensal = this.txJuro/100/12;
         double montanteEmprestimo = super.getMontante();
         
         if(super.getPrazo() <= 24) {

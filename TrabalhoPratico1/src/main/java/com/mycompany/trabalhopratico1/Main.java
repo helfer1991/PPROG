@@ -21,7 +21,7 @@ public class Main {
         CreditoEducacao c3 = new CreditoEducacao("Mafalda", "Business Manager", 18000, 60, 24);
         CreditoEducacao c4 = new CreditoEducacao("David", "Estudante", 5000, 36, 12);
         CreditoAutomovel c5 = new CreditoAutomovel("Andreia", "Fisioterapeuta", 16000, 120);
-        CreditoAutomovel c6 = new CreditoAutomovel("Ricardo", "Developer", 25000, 48);
+        CreditoAutomovel c6 = new CreditoAutomovel("Ricardo", "Developer", 25000, 25);
         
         //b
         CreditoBancario[] arrayCreditos = new CreditoBancario[12];
